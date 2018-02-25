@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fake Blog</title>
+        <meta name="description" content="personal blog site!" >
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <style>
+                #wrapper {
+                    height: 950px;
+                    width: 800px;
+                    background-color:rgb(232, 247, 241);
+                    margin-left: 250px;
+                    padding-right: 10px;
+                }
+                #header{
+                    color:rgb(1, 53, 37);
+                    font-family:Courier New, Courier, monospace;
+                    font-size: 20px;
+                    font-weight: bolder;
+                    display: inline-block;
+                    width: 100px;
+                    height: 45px;
+                    margin: 5px;
+                    padding: 25px;
+                }  
+                .logo{
+                    width: 100px;
+                    height:100px;
+                    margin-left: 50px;
+                    display:inline-block;
+                    background-image: url('image.png');
+                    background-size: 100px;
+                } 
+                .content{
+                    font-family: Courier New, Courier, monospace;
+                    width: 750px;
+                    height: 200px;
+                    margin-top: 70px;
+                    margin-left: 45px;
+                }
+                .survey {
+                    font-family: Courier New, Courier, monospace;
+                    width: 750px;
+                    height: 200px;
+                    margin-top: 170px;
+                    margin-left: 50px;
+                }
+                .button {
+                    display:inline-block;
+                    vertical-align: top;
+                    font-size:15px;
+                    margin-top: 25px;
+                    margin-left: 50px;
+                }
+        </style>
+    </head>
+   
+    <body>
+        <div id = "wrapper">
+
+            <div id="header"><h1>Going Back to Coding</h1></div>
+            <div class="logo"></div>
+            
+            <article class ="content">
+                <p>I studied Computer Science as my major in the Philippines. My family migrated here in Seattle and I work as a Business/System Analyst for sometime. I got bored with no progressive learning and suddenly I saw the light. I need go back to my roots...C-O-D-I-N-G. I recently got admitted in Coding Dojo Seattle and can't wait to start learning, solving problems and building things!</p>
+                <h4>INTEREST & BUCKETLIST</h4>
+                <ul>
+                    <li>To code and build things again</li>
+                    <li>Mountain/Falls/Lake Trekking (Any recommendations would be nice!)</li>
+                    <li>Swimming (We have a lot of awesome beaches in the PH)</li>
+                    <li>North Star watching (must-try in Alaska/Iceland)</li>
+                    <li>Eating (Foodie!)</li>
+                    <li>Travelling</li>
+                    <li>Adventure</li>
+                    <li>Playing Nancy Drew - finished all series</li>
+                    <li>Sleeping - simple because its LIFE</li>
+                </ul>
+            </article>
+            <form class ="survey">
+                <h4>PLEASE TAKE A SHORT SURVEY</h4>
+                
+                <label>Email:<input type="text" id="email" name="email"></label>
+                
+                <p>Do you want to be notify with stuff?:
+                    <select name="answer">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select> 
+                </p>
+                
+                <input type="radio" id="awesome" name="comments" value="awesome">
+                    <label for="awesome">Awesome</label>
+                    <input type="radio" id="average" name="comments" value="average">
+                    <label for="average">Average</label>
+                    <input type="radio" id="worst" name="comments" value="worst">
+                    <label for="worst">I got bored</label>
+                
+                <p>Follow Me:</p>
+                <input type="checkbox" id="facebook" name="media" value="facebook">
+                <label for="facebook">FACEBOOK</label>
+                <input type="checkbox" id="instagram" name="media" value="instagram">
+                <label for="instagram">INSTAGRAM</label>
+                <input type="checkbox" id="twitter" name="media" value="twitter">
+                <label for="twitter">TWITTER</label>
+                <input type="checkbox" id="all" name="media" value="all">
+                <label for="all">ALL</label>
+
+            </form>
+            <button class="button">Submit</button>
+        </div>
+    </body>
+</html>
